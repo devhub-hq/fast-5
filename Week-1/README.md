@@ -2,6 +2,7 @@
 
 **12/08/2025 - 26/08/2025**
 
+
 ### Problems
 - [ ] [1. Why Yacine Got Fired](./1.%20Why%20Yacine%20Got%20Fired/README.md)
 - [ ] [2. Power Gauntlet](./2.%20Power%20Gauntlet/README.md)
