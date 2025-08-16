@@ -23,3 +23,4 @@ assert sol(3, 3, [2, 2, 4]) == False
 assert sol(4, 3, [1, 3, 5, 7]) == True
 assert sol(4, 2, [1, 3, 5, 7]) == False
 assert sol(6, 4, [10, 20, 30, 5, 8, 12]) == True
+assert sol(3, 4, [1,2,3]) == False
