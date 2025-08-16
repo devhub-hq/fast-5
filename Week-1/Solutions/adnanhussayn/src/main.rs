@@ -26,35 +26,32 @@ fn first_repeated_flag(flags: &str) -> Option<char> {
 }
 
 fn can_buy_funny_snacks(n: usize, x: usize, prices: &[usize]) -> bool {
-    use itertools::Itertools;
-    
-    for combination in prices.iter().combinations(x) {
-        let sum: usize = combination.into_iter().copied().sum();
-        if sum % 2 != 0 {
-            return true; 
+    let odds = prices.iter().filter(|&p| p % 2 == 1).count();
+    let evens = prices.len() - odds;
+
+    for odd_taken in 1..=odds.min(x) {
+        if odd_taken % 2 == 1 {
+            let even_needed = x - odd_taken;
+            if even_needed <= evens {
+                return true;
+            }
         }
     }
-    
-    false 
+    false
 }
 
 fn count_ways(n: usize) -> usize {
-    if n == 0 {
-        return 1;
-    }
-    if n == 1 {
+    if n == 0 || n == 1 {
         return 1;
     }
 
-    let mut ways = vec![0; n + 1];
-    ways[0] = 1;
-    ways[1] = 1;
-
-    for i in 2..=n {
-        ways[i] = ways[i - 1] + ways[i - 2];
+    let (mut a, mut b) = (1, 1);
+    for _ in 2..=n {
+        let next = a + b;
+        a = b;
+        b = next;
     }
-
-    ways[n]
+    b
 }
 
 
