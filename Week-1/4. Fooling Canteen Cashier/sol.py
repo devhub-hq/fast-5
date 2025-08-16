@@ -1,21 +1,18 @@
-def recSol(index:int,running_sum:int,left_count:int,prices:list[int])->bool:
-    if left_count==0:
-      if running_sum%2==1:
-        return True
-      else:
-         return False
-    if left_count>len(prices)-index:
-        return False
-    
-    picked=recSol(index+1,running_sum+prices[index],left_count-1,prices)
-    if picked:
-        return True
-    not_picked=recSol(index+1,running_sum,left_count,prices)
-    return not_picked
-
 def sol(n:int,x:int,prices:list[int])->bool:
-    return recSol(0,0,x,prices)
+    odd_count=0
+    even_count=0
+    for i in prices:
+        if i%2==0:
+            even_count+=1
+        else:
+            odd_count+=1
+    t=1
 
+    while t<=odd_count and t<=x:
+        if t+even_count>=x:
+            return True
+        t+=2
+    return False
 assert sol(4, 3, [1, 2, 3, 4]) == True
 assert sol(4, 2, [2, 4, 6, 8]) == False
 assert sol(1, 1, [5]) == True
