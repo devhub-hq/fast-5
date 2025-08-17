@@ -1,0 +1,22 @@
+# Late Night Code Review - Input Examples
+# Problem: Find the first character that appears twice in a string
+
+# Example 1: Basic case
+# Input: abccbd
+# Output: c
+abccbd
+
+# Example 2: Simple duplicate
+# Input: hello
+# Output: l
+hello
+
+# Example 3: Duplicate at start
+# Input: aabbb
+# Output: a
+aabbb
+
+# Example 4: No duplicates
+# Input: abcdef
+# (no output)
+abcdef

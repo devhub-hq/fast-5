@@ -1,0 +1,9 @@
+Input format:
+Line 1: Total number of tweets (n)
+Line 2: Space-separated list of remaining tweet IDs
+
+Example:
+5
+1 2 5 3
+
+Output: 4

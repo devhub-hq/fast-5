@@ -1,0 +1,10 @@
+Input format:
+Single line containing an integer n (number of crystals)
+
+Examples:
+- Input: 1 → Output: Yes
+- Input: 2 → Output: Yes
+- Input: 3 → Output: No
+- Input: 4 → Output: Yes
+- Input: 9 → Output: No
+- Input: 16 → Output: Yes

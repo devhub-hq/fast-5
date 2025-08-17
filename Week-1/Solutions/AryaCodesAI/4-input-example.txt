@@ -1,0 +1,20 @@
+### Fooling Canteen Cashier - Input Examples
+# Problem: Check if we can select exactly X snacks with odd total price
+
+# Test Case 1: Basic case from problem statement
+# N=4 snacks, X=3 to buy, prices=[1,2,3,4]
+# Expected: YES (select 1,2,4 → sum=7 which is odd)
+4 3
+1 2 3 4
+
+# Test Case 2: All even prices - impossible to get odd sum
+# N=3 snacks, X=2 to buy, prices=[2,4,6] (all even)
+# Expected: NO (any 2 snacks will sum to even)
+3 2
+2 4 6
+
+# Test Case 3: Single odd price available
+# N=2 snacks, X=1 to buy, prices=[1,2]
+# Expected: YES (select 1 → sum=1 which is odd)
+2 1
+1 2

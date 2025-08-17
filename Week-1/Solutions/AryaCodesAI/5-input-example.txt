@@ -1,0 +1,30 @@
+### Input Example for Late Night Pizza Party
+
+# Test Case 1: Basic case
+3
+
+# Expected Output: 3
+# Explanation: (1+1+1), (1+2), (2+1)
+
+# Test Case 2: Small staircase
+2
+
+# Expected Output: 2
+# Explanation: (1+1), (2)
+
+# Test Case 3: Single step
+1
+
+# Expected Output: 1
+# Explanation: (1)
+
+# Test Case 4: Larger staircase
+5
+
+# Expected Output: 8
+# Explanation: (1+1+1+1+1), (1+1+1+2), (1+1+2+1), (1+2+1+1), (2+1+1+1), (1+2+2), (2+1+2), (2+2+1)
+
+# Test Case 5: Edge case
+0
+
+# Expected Output: 0
