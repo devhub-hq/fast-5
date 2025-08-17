@@ -1,0 +1,10 @@
+## Week 1
+
+**12/08/2025 - 26/08/2025**
+
+### Problems
+- [ ] [1. Why Yacine Got Fired](./Questions/1.%20Why%20Yacine%20Got%20Fired/README.md)
+- [ ] [2. Power Gauntlet](./Questions/2.%20Power%20Gauntlet/README.md)
+- [ ] [3. Late Night Code Review](./Questions/3.%20Late%20Night%20Code%20Review/README.md)
+- [ ] [4. Fooling Canteen Cashier](./Questions/4.%20Fooling%20Canteen%20Cashier/README.md)
+- [ ] [5. Late Night Pizza Party](./Questions/5.%20Late%20Night%20Pizza%20Party/README.md)
