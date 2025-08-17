@@ -12,7 +12,7 @@ def solution(n,x,arr):
     
     else:
         if odd % 2 == 0:
-            o -= 1
+            odd -= 1
         if x % 2 == 0 and even == 0:
             return "No"
         elif even + odd >= x:
