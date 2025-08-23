@@ -1,6 +1,6 @@
 public class problem1 {
 
-    public int problem1(int[] arr, int n) {
+    public int problem(int[] arr, int n) {
 
         int givenSum = 0;
 
@@ -12,6 +12,17 @@ public class problem1 {
 
         return realSum - givenSum;
 
+    }
+
+    //Optimized
+    public int problem1(int[] arr, int n) {
+        int xor = 0;
+
+        for (int i = 1; i <= n; i++) xor ^= i;
+
+        for (int num : arr) xor ^= num;
+
+        return xor;
     }
 
     public static void main(String[] args) {

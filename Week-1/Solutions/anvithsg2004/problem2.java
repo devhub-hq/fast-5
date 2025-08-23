@@ -4,7 +4,7 @@ public class problem2 {
         if (n <= 0) return false;
 
         int low = 0;
-        int high = (int)(Math.log(n) / Math.log(2));
+        int high = (int) (Math.log(n) / Math.log(2));
 
         while (low <= high) {
             int mid = low + (high - low) / 2;
@@ -31,6 +31,11 @@ public class problem2 {
             result = result * 2;
         }
         return result;
+    }
+
+    //Optimized
+    public boolean problem1(int n) {
+        return n > 0 && (n & (n - 1)) == 0;
     }
 
     public static void main(String[] args) {

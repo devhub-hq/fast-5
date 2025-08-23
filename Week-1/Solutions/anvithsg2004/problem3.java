@@ -22,6 +22,16 @@ public class problem3 {
 
     }
 
+    //Optimized
+    public Character problem1(String s) {
+        boolean[] seen = new boolean[256];
+        for (char c : s.toCharArray()) {
+            if (seen[c]) return c;
+            seen[c] = true;
+        }
+        return null;
+    }
+
     public static void main(String[] args) {
 
     }
