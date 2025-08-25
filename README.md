@@ -10,7 +10,7 @@ This is a great opportunity for everyone to **skill up and grow**. 💡
 ### 📌 How to Participate
 
 - Fork this repository.
-- Create a folder with your github username Inside `/week-*/Solutions/username` folder.
+- Create a folder with your twitter username Inside `/week-*/Solutions/username` folder.
 - Add your solutions to each of the problems.
 - Raise a PR.
 - Share your work with the community.
