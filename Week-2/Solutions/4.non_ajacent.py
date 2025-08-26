@@ -1,10 +1,15 @@
-def maxSum(arr:list[int],index:int,sum:int)->int:
+def maxSum(arr:list[int],index:int,sum:int,memo)->int:
     if index>=len(arr):
-        return sum
-    return max(maxSum(arr,index+2,arr[index]+sum),maxSum(arr,index+1,sum))
+      return sum
+    key=(index,sum)
+    if memo.get(key):
+        return memo.get(key)
+
+    memo[key]=max(maxSum(arr,index+2,arr[index]+sum,memo),maxSum(arr,index+1,sum,memo))
+    return memo[key]
 
 def sol(arr:list[int])->int:
-    return maxSum(arr,0,0)
+    return maxSum(arr,0,0,dict())
 
 
 
