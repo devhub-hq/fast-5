@@ -5,7 +5,7 @@ In quantum mechanics, electrons in an atom occupy orbitals (energy levels).
 A key rule is the Pauli Exclusion Principle: two electrons cannot occupy the same quantum state simultaneously.
 
 Practically, this means electrons must “skip over” certain configurations to stay stable.
-
+ 
 Now imagine you are given an array of energy values for orbitals.
 
 If you place an electron in orbital i, you cannot place another electron in orbital i-1 or i+1 (they are adjacent, violating stability).
