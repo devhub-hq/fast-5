@@ -1,6 +1,6 @@
 
 
-package Week2.Solutions.SaishashanthTarigopula;
+
 import java.util.HashMap;
 public class PairParticles {
         public int pairParticles(int[] particles) {

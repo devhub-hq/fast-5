@@ -1,4 +1,3 @@
-package Week2.Solutions.SaishashanthTarigopula;
 
 
 class NonAdjacent {

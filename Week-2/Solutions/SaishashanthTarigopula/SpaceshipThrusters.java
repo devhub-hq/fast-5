@@ -1,4 +1,3 @@
-package Week2.Solutions.SaishashanthTarigopula;
 
 public class SpaceshipThrusters {
     public int spaceshipThrusters (int a, int b) {

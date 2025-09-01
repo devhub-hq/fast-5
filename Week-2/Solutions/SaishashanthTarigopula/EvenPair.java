@@ -1,4 +1,4 @@
-package Week2.Solutions.SaishashanthTarigopula;
+
 
 public class EvenPair {
     public int evenPair(int A, int B) {

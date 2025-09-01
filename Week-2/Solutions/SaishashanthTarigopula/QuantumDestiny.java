@@ -1,4 +1,4 @@
-package Week2.Solutions.SaishashanthTarigopula;
+
 
 public class QuantumDestiny {
     public boolean quantumDestiny(int input) {
